@@ -11,6 +11,12 @@ export default function Pathfind() {
     for (let i = 0; i < cols; i++) {
       grid[i] = new Array(rows);
     }
+    
+    for (let i = 0; i < cols; i++) {
+      for (let j = 0; j < rows; j++) {
+        gird[i][j];
+      }
+    }
   };
   return (
     <div>
