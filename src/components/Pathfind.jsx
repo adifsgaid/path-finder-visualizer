@@ -22,6 +22,14 @@ export default function Pathfind() {
     }
   };
 
+  const Spot = (i, j) => {
+    this.x = i;
+    this.y = j;
+    this.g = 0;
+    this.f = 0;
+    this.h = 0;
+  };
+
   return (
     <div>
       <h1> Pathfind Component</h1>
