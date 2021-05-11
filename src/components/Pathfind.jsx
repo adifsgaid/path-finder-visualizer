@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const row = 5;
+const rows = 5;
 const cols = 5;
 
 export default function Pathfind() {
@@ -11,13 +11,17 @@ export default function Pathfind() {
     for (let i = 0; i < cols; i++) {
       grid[i] = new Array(rows);
     }
+    createSpot(grid);
+  };
 
+  const createSpot = (grid) => {
     for (let i = 0; i < cols; i++) {
       for (let j = 0; j < rows; j++) {
-        gird[i][j] = new Spot(i, j);
+        grid[i][j] = new Spot(i, j);
       }
     }
   };
+
   return (
     <div>
       <h1> Pathfind Component</h1>
