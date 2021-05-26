@@ -51,7 +51,7 @@ export default function Pathfind() {
     this.f = 0;
     this.h = 0;
   }
-
+  console.log(Grid)
   // Grid iterating with node
   const gridWithNode = (
     <div>
